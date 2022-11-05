@@ -1,0 +1,269 @@
+/* -Font imports-
+ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+/* -Define main colors-
+ */
+:root {
+    --dark-blue: #1f2937;
+    --white: #f9faf8;
+    --grey: #e5e7eb;
+    --button-color: #3883F6;
+}
+
+/*  -Main Selectors-
+ */
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+*,
+*:before,
+:after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+li {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--grey);
+}
+
+p {
+    color: var(--grey);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    background-color: var(--dark-blue);
+    height: 50px;
+}
+
+button {
+    width: 100px;
+    padding: 7px 8px;
+    background-color: var(--button-color);
+    color: var(--white);
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    border: 0;
+    border-radius: 5px;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-blue);
+    height: 80px;
+}
+
+a:hover {
+    color: var(--button-color);
+}
+
+/*  - Class Selectors -
+*/
+
+/*  Header  */
+.header-menu {
+    display:flex;
+    gap: 16px;
+    align-items: center;
+    padding-right: 80px;
+}
+
+.logo {
+    font-size: 24px;
+    color: #f9faf8;
+    align-items: center;
+    display: flex;
+    padding-left: 85px;
+}
+/* Header End  */
+
+/*  Hero  */
+.hero {
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+    padding: 5.5rem;
+    gap: 30px;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding-left: 25px;
+    justify-content: center;
+    flex: 1;
+}
+
+.hero-left p {
+    padding: 20px 0;
+}
+
+.hero-left button:hover {
+    outline: 2px solid var(--white);
+    transition: 0.1s;
+}
+
+.hero-right {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0;
+}
+/*  Hero End  */
+
+/*  Cards  */
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 70px;
+}
+
+.info-header {
+    font-size: 24px;
+    padding-top: 40px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+    border: 3px solid var(--button-color);
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.text {
+    text-align: center;
+    display: flex;
+}
+
+.text p {
+    color: var(--dark-blue);
+    font-weight: 200;
+}
+/*  Cards End  */
+
+/*  Quote  */
+.quote-section {
+    display: flex;
+    height: 200px;
+    background-color: var(--grey);
+    margin-top: 50px;
+    flex: 1;
+    flex-wrap: wrap;
+    padding: 100px 200px 75px;
+}
+
+.quote {
+    font-size: 36px;
+    width: 100%;
+    padding: 20px;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 5rem;
+}
+/*  Quote End  */
+
+/*  Call to Action  */
+.cta {
+    display: flex;
+    justify-content: center;
+}
+
+.cta-box {
+    background-color: var(--button-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 150px;
+    border-radius: 5px;
+    min-width: 450px;
+}
+
+.cta-text {
+    color: var(--white);
+    padding: 35px
+}
+
+.cta-button {
+    border: 2px solid var(--white);
+    border-radius: 7px;
+    margin-right: 50px;
+}
+
+.cta-button button:hover {
+    background-color: var(--white);
+    color: var(--dark-blue);
+    transition: border-color 0.5s, background-color 0.5s, color 0.5s;
+}
+
+.cta-button button:active {
+    transform: translateY(3px);
+}
+
+/*  Sets all elements with this class to have a "pointer" cursor; e.g. buttons, links, etc.  */
+.pointer {
+    cursor: pointer;
+}
